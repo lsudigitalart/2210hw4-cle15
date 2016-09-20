@@ -1,5 +1,6 @@
 var ex = 300;
 var speed = 10;
+var words = "Game on";
 
 var rx = 10;
 var ry = 10;
@@ -26,16 +27,25 @@ function draw(){
 
 textSize(32);
 text(score, width/2, 32);
-
+text(words, width/2, height/3);
 if (ex-20 == rx)
 {
   fill(20,40,0);
-  score++;
+  score = score + 100;
+}
+else {
+score --;
 }
 if(ex+20 == tx)
 {
   fill(0,50,0);
-  score++;
+  score = score + 100;
+}
+else {
+  score --;
+}
+if(score >= 1000){
+words = "You Win";
 }
 if(keyIsPressed){
     if(key == "a"){
