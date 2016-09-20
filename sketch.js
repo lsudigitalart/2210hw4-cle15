@@ -46,11 +46,11 @@ else {
 }
 if(score >= 1000){
 words = "You Win";
-background(125,0,0);
+//background(125,0,0);
 }
-if(score >= -1000){
-  words = "You Lose";
-  background(0,200,0);
+if(score <= -1000){
+words = "You Lose";
+//background(0,200,0);
 }
 if(keyIsPressed){
     if(key == "a"){
