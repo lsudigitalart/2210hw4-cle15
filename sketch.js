@@ -28,7 +28,7 @@ function draw(){
 textSize(32);
 text(score, width/2, 32);
 text(words, width/2, height/3);
-if (ex-20 == rx)
+if (ex-10 == rx)
 {
   fill(20,40,0);
   score = score + 100;
@@ -36,7 +36,7 @@ if (ex-20 == rx)
 else {
 score --;
 }
-if(ex+20 == tx)
+if(ex+10 == tx)
 {
   fill(0,50,0);
   score = score + 100;
@@ -46,6 +46,7 @@ else {
 }
 if(score >= 1000){
 words = "You Win";
+background(125,0,0);
 }
 if(keyIsPressed){
     if(key == "a"){
